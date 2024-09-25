@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image.jpg'); /* Add your university image here */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-color: rgba(0, 0, 0, 0.6); /* Increased transparency overlay (reduced image visibility by another 10%) */
+    background-blend-mode: darken; /* Darken the image further */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00; /* Bright yellow for the heading */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for more emphasis */
+    font-weight: bold; /* Make the heading bold */
+    opacity: 1; /* Full opacity for the heading to make it stand out */
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.85); /* More opaque black background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    color: #ffcc00; /* Bright yellow for labels */
+    display: block;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ffcc00; /* Yellow border */
+    font-size: 16px;
+    background-color: #333333; /* Dark grey background for inputs */
+    color: #ffffff; /* White text color for inputs */
+}
+
+select:focus,
+input[type="number"]:focus {
+    border: 1px solid #ffcc00; /* Yellow border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00; /* Bright yellow for the button */
+    border: none;
+    color: black; /* Black text for the button */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Added transform for scale effect */
+}
+
+button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+    transform: scale(1.02); /* Slightly enlarge button on hover */
+}
+
+.result {
+    margin-top: 20px;
+    background-color: #333333; /* Dark grey background for results */
+    padding: 15px;
+    border: 2px solid #ffcc00; /* Yellow border for results */
+    border-radius: 8px;
+    display: none;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px; /* Match the form width */
+    text-align: center; /* Center text in result */
+    color: #ffcc00; /* Yellow text in results */
+}
+
+.result p {
+    margin: 10px 0;
+}
+
+.result span {
+    font-weight: bold;
+    color: #ffcc00; /* Bright yellow for emphasized text */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777; /* Dark grey for footer */
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

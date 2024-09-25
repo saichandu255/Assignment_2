@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Registration Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>University Registration Program</h1>
+
+    <form id="registrationForm">
+        <label for="studentType">Student Type:</label>
+        <select id="studentType">
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+        </select>
+
+        <label for="residency">Residency:</label>
+        <select id="residency">
+            <option value="in-state">In-State</option>
+            <option value="out-state">Out-State</option>
+        </select>
+
+        <label for="credits">Number of Credits:</label>
+        <input type="number" id="credits" min="1" required>
+
+        <button type="button" onclick="calculateFees()">Calculate</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Registration Fee: $<span id="registrationFee"></span></p>
+        <p>Tuition Rate (per credit): $<span id="tuitionRate"></span></p>
+        <p>Tuition: $<span id="tuition"></span></p>
+        <p>Total Fee: $<span id="totalFee"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
